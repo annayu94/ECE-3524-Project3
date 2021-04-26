@@ -19,7 +19,7 @@ while true; do
 			if [[ $input = ":q" ]] ; then
 				break
 			else
-				echo "Type :q to quit"
+				echo "Type :q to quit and return to submenu"
 			fi
 		done
 		
@@ -38,7 +38,7 @@ while true; do
 			if [[ $input = ":q" ]] ; then
 				break
 			else
-				echo "Type :q to quit"
+				echo "Type :q to quit and return to submenu"
 			fi
 		done
 		
@@ -51,7 +51,7 @@ while true; do
 			if [[ $input = ":q" ]] ; then
 				break
 			else
-				echo "Type :q to quit"
+				echo "Type :q to quit and return to submenu"
 			fi
 		done
 	
