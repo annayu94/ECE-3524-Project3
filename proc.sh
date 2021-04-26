@@ -13,29 +13,34 @@ while true; do
 	# Choice 1
 	if [ $choice == "1" ] ; then
 		ps -ef
-		read -N 2 input
-		echo ""
-		if [[ $input = ":q" ]] ; then
-			continue
-		fi
+		while true; do
+			read -N 2 input
+			echo ""
+			if [[ $input = ":q" ]] ; then
+				break
+			else
+				echo "Type :q to quit"
+			fi
+		done
 		
 	# Choice 2
 	elif [ $choice == "2" ] ; then
+		echo "Please enter the PID of the process you would like to kill:"
+		read pidnum
+		if ! kill $pidnum; then
+			echo "The PID does not exsit or It cannot be killed."
+		else
+			break
+		fi	
 		while true; do
-			echo "Please enter the PID of the process you would like to kill:"
-			read pidnum
-			if ! kill $pidnum > /dev/null 2>&1; then
-				echo "The PID does not exist or You don't have permission."
-				echo "Try another PID."
+			read -N 2 input
+			echo ""
+			if [[ $input = ":q" ]] ; then
+				break
 			else
-				continue
+				echo "Type :q to quit"
 			fi
-		done	
-		read -N 2 input
-		echo ""
-		if [[ $input = ":q" ]] ; then
-			continue
-		fi
+		done
 		
 	# Choice 3
 	elif [ $choice == "3" ] ; then
