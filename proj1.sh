@@ -39,7 +39,7 @@ fi
 echo "<!DOCTYPE html>" >> $OUTPUT
 echo "<html>" >> $OUTPUT
 echo "<head>" >> $OUTPUT
-echo "<title>ECE3524_Project1_AnnaYu</title>" >> $OUTPUT
+echo "<title>ECE3524_Project3_AnnaYu</title>" >> $OUTPUT
 echo "<style type="text/css">" >> $OUTPUT
 echo "li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font-family: Helvetica; color: #000000; -webkit-text-stroke: #000000}" >> $OUTPUT
 echo "li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; font-family: Helvetica; color: #0000e9}" >> $OUTPUT
