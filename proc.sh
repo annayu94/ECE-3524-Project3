@@ -44,12 +44,16 @@ while true; do
 		
 	# Choice 3
 	elif [ $choice == "3" ] ; then
-		top
-		read -N 2 input
-		echo ""
-		if [[ $input = ":q" ]] ; then
-			continue
-		fi
+		top -n 1
+		while true; do
+			read -N 2 input
+			echo ""
+			if [[ $input = ":q" ]] ; then
+				break
+			else
+				echo "Type :q to quit"
+			fi
+		done
 	
 	# Choice 4
 	elif [ $choice == "4" ] ; then
