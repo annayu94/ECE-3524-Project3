@@ -117,6 +117,7 @@ while true; do
 		echo "  My Home file-tree"
 		echo "----------------------------------------------------"
 		sh ./proj1.sh
+		echo "The filetree.html is generated and saved in ${PWD}"
 		read -p "Press [Enter] key to continue..." key
 		if [ "$key" = "" ] ; then
 			continue
@@ -127,7 +128,7 @@ while true; do
 		echo "----------------------------------------------------"
 		echo "  Process Operations"
 		echo "----------------------------------------------------"
-		sh ./choice9.sh
+		sh ./proc.sh
 		continue
 	
 	# Choice 10 
@@ -135,7 +136,7 @@ while true; do
 		break;
 	
 	else
-		echo "Choose a number between [ 1 - 10 ]"
+		echo "*** Error: Choose a number between [ 1 - 10 ] ***"
 	fi
 done
 
