@@ -14,12 +14,14 @@ while true; do
 	if [ $choice == "1" ] ; then
 		ps -ef
 		while true; do
+			echo ""
+			echo "Type :q to quit and return to submenu"
 			read -N 2 input
 			echo ""
 			if [[ $input = ":q" ]] ; then
 				break
 			else
-				echo "Type :q to quit and return to submenu"
+				continue
 			fi
 		done
 		
@@ -33,12 +35,14 @@ while true; do
 			break
 		fi	
 		while true; do
+			echo ""
+			echo "Type :q to quit and return to submenu"
 			read -N 2 input
 			echo ""
 			if [[ $input = ":q" ]] ; then
 				break
 			else
-				echo "Type :q to quit and return to submenu"
+				continue
 			fi
 		done
 		
@@ -46,12 +50,14 @@ while true; do
 	elif [ $choice == "3" ] ; then
 		top -n 1
 		while true; do
+			echo ""
+			echo "Type :q to quit and return to submenu"
 			read -N 2 input
 			echo ""
 			if [[ $input = ":q" ]] ; then
 				break
 			else
-				echo "Type :q to quit and return to submenu"
+				continue
 			fi
 		done
 	
