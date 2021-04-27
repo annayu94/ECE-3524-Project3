@@ -1,6 +1,7 @@
 #! /bin/bash
 
 while true; do
+	# Main Menu
 	echo "`date`"
 	echo "----------------------------------------------------"
 	echo " Main Menu"
