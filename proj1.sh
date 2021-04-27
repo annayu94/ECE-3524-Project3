@@ -64,7 +64,7 @@ echo "</head>" >> $OUTPUT
 echo "<body>" >> $OUTPUT
 echo "<ul class="ul1">" >> $OUTPUT
 echo "<h1 style="font-family:Helvetica">ECE 3524 Project 3 - 8. My Home File-tree</h1>" >> $OUTPUT
-echo "<h2 style="font-family:Helvetica">- Script runs in and html is generated in ${PWD}</h2>" >> $OUTPUT
+echo "<h2 style="font-family:Helvetica">- Script runs and html is generated in ${PWD}</h2>" >> $OUTPUT
 echo "<h2 style="font-family:Helvetica">- Directory Hierarchy starts from $FILES</h2>" >> $OUTPUT
 echo "<li class="li1"><span class="s1"></span><span class="s2">$FILES<span class="Apple-converted-space"> </span></span></li>" >> $OUTPUT
 
